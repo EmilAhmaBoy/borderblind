@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "id": "borderblind",
+  "version": "${version}",
+  "name": "Borderblind",
+  "description": "A simple mod to change blocks' borders' color ",
+  "authors": [
+    "EmilAhmaBoy"
+  ],
+  "contact": {
+    "repo": "https://github.com/Emil/Borderblind"
+  },
+  "license": "MIT",
+  "icon": "assets/borderblind/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "dev.emilahmaboy.borderblind.client.BorderblindClient"
+    ],
+    "main": [
+      "dev.emilahmaboy.borderblind.Borderblind"
+    ]
+  },
+  "mixins": [
+    "borderblind.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
